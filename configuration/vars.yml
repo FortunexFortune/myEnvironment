@@ -1,0 +1,12 @@
+packages: 
+- git
+- tmux
+- dos2unix
+- tree
+- htop
+- openjdk-8-jdk
+- vim
+- cmatrix
+- psmisc 
+
+user: vagrant

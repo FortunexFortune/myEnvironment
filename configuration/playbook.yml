@@ -1,0 +1,24 @@
+---
+- hosts: localhost
+  remote_user: vagrant
+  vars_files: vars.yml
+    
+  tasks:
+    - name : install software 
+      package :
+        name : "{{item}}"
+        state : present
+      loop : "{{packages}}"
+
+    - name: Configure bashrc by adding tmux
+      blockinfile:
+        path: /home/{{user}}/.bashrc
+        block: |
+          if [ -z "$TMUX" ]; then
+          tmux attach -t default || tmux new -s default
+          fi
+
+    - name: Download vim config
+      get_url:
+        url: https://raw.githubusercontent.com/linuxacademy/content-python3-sysadmin/master/helpers/vimrc
+        dest: /home/{{user}}/.vimrc
