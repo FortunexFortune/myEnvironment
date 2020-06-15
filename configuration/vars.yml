@@ -8,5 +8,6 @@ packages:
 - vim
 - cmatrix
 - psmisc 
+- curl
 
 user: vagrant
