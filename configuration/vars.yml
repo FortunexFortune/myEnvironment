@@ -9,5 +9,6 @@ packages:
 - cmatrix
 - psmisc 
 - curl
+- zsh
 
 user: vagrant
