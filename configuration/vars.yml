@@ -4,11 +4,12 @@ packages:
 - dos2unix
 - tree
 - htop
-- openjdk-8-jdk
+- openjdk-11-jdk 
 - vim
-- cmatrix
-- psmisc 
+#- cmatrix
+#- psmisc 
 - curl
-- zsh
+#- zsh
+- nmap
 
 user: vagrant
