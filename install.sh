@@ -12,3 +12,5 @@ ansible --version
 
 echo "Running ansible playbook"
 ansible-playbook  /home/${USER}/configuration/playbook.yml 
+
+# ansible-playbook  /home/${USER}/configuration/playbook.yml  --extra-var="install_docker=True"

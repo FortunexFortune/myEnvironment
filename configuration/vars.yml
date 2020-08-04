@@ -5,11 +5,13 @@ packages:
 - tree
 - htop
 - openjdk-11-jdk 
+- maven
 - vim
-#- cmatrix
-#- psmisc 
 - curl
 #- zsh
-- nmap
+#- cmatrix
+#- psmisc
 
 user: vagrant
+
+install_docker: False
